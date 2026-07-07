@@ -20,6 +20,6 @@ public class PostmanEchoTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("wrongField", equalTo(testData));  // ← НЕВЕРНЫЙ JSONPath
+                .body("data", equalTo(testData));  // ← ПРАВИЛЬНЫЙ JSONPath
     }
 }
